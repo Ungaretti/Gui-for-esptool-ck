@@ -10,7 +10,7 @@ Create a folder and add to it:
 * the Esptool-ck-GUI.red source file
 * the esptool-ck' esptool.exe executable
 * the binary file you want to flash
-https://github.com/Ungaretti/Gui-for-esptool-ck/edit/master/README.md
 
-<img src="https://github.com/Ungaretti/Gui-for-esptool-ck/tree/master/assets/folderview.jpg">
 
+<img src="/assets/folderview.jpg">
+![Optional Text](../master/myFolder/image.png)
