@@ -77,7 +77,7 @@ funcWrongMem:
 ]
 
 funcCheckMem:
-; Checks if the selected file 4th byte matches memory selection
+; Checks if the selected file's 4th byte matches memory selection
 	has[][
 	binFile: read/binary  binFileName
 	byte: pick binFile 4
@@ -132,7 +132,8 @@ view [
 	dropComPort: drop-down 200 "Choose:" data: copy com-ports
 	button "Scan ports" 70 [
 		funcGetComPorts
-		dropComPort/data: copy com-ports]
+		dropComPort/data: copy com-ports
+	]
 	return
 	text right "File to flash:"
 	fieldFilename: field 200
@@ -140,12 +141,13 @@ view [
 	return
 	text right "Memory size:" 
 	dropMemorysize: drop-down 70 data ["512K" "256K" "1M" "2M" "4M" "8M" "16M"]
-		do [dropMemorysize/selected: 5 
-		dropMemorysize/text: pick (dropMemorysize/data) dropMemorysize/selected]
+	do [dropMemorysize/selected: 5 
+	dropMemorysize/text: pick (dropMemorysize/data) dropMemorysize/selected]
 	return
 	text right "Baud rate:" 
 	dropBaudRate: drop-down 70 data ["9600" "57600" "74880" "115200" "230400" "921600"]
-	do [dropBaudRate/selected: 6 
+	do [
+		dropBaudRate/selected: 6 
 		dropBaudRate/text: pick (dropBaudRate/data)
 		dropBaudRate/selected
 	]
