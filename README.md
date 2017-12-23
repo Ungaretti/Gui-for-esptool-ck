@@ -12,8 +12,8 @@ Pros:
 * checks to see if the binary file was made for the memory size you selected and **patches the file if needed!**
 
 Cons:
-* NodeMcu boards only. As it is, it uses the nodemcu reset mode from esptool-ck.
-* Windows only. As it is, it interfaces with windows command prompt.
+* NodeMcu boards only. As it is, it uses the uses eptool-ck's "nodemcu reset mode".
+* Windows only. It interfaces with Windows' command prompt.
 
 You may change these issues in the code if you feel like it.
 
@@ -35,7 +35,7 @@ You should end up with something like this:
 
 Now double click on Esptool-ck-GUI.red and tell windows to open it with the Red interpreter (red-063.exe as of december 2017).
 
-I believe from there it is pretty intuitive. 
+I believe that it's use is pretty intuitive. 
 
 I suggest you use [ESPlorer](https://esp8266.ru/esplorer) to open your device and, after reseting the board and adjusting the baud rate, you should have the lua prompt at the serial console.
 
