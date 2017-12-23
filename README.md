@@ -12,5 +12,6 @@ Create a folder and add to it:
 * the binary file you want to flash
 
 You should end up with something like this:
+
 <img src="https://github.com/Ungaretti/ungaretti.github.io/blob/master/assets/esptoolGUI/folderview.png">
 
