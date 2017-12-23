@@ -115,7 +115,7 @@ funcFlashEsp:
 		append command "-ca 0x00000 -cf"
 		append command fieldFilename/text
 		print command
-		call form command
+		call/shell/show form command
 		clear command
 	][exit]
 ]
