@@ -11,6 +11,6 @@ Create a folder and add to it:
 * the esptool-ck' esptool.exe executable
 * the binary file you want to flash
 
+You should end up with something like this:
+<img src="https://github.com/Ungaretti/ungaretti.github.io/blob/master/assets/esptoolGUI/folderview.png">
 
-<img src="/assets/folderview.jpg">
-![Optional Text](../master/myFolder/image.png)
