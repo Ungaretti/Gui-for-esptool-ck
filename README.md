@@ -1,5 +1,5 @@
 # Gui-for-esptool-ck
-A program written in Red language to create a GUI for flashing NodeMcu boards with esptool-ck in Windows
+A program written in [Red language](http://www.red-lang.org/) to create a GUI for flashing NodeMcu boards with esptool-ck in Windows
 
 <img src="https://github.com/Ungaretti/ungaretti.github.io/blob/master/assets/esptoolGUI/Screenshot.png">
 
