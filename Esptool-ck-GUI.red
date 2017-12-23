@@ -44,10 +44,10 @@ funcCreateNewFile:
 		"512K"  [h: 0]
 		"256K"	[h: 1]
 		"1M"	[h: 2]
-		"2M"	[h:	3]
+		"2M"	[h: 3]
 		"4M"	[h: 4]
 		"8M"	[h: 8]
-		"16M"	[h:	9]
+		"16M"	[h: 9]
 	]
 	byte: h * 16 + l
 	poke binFile 4 byte
