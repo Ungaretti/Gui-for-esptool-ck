@@ -14,6 +14,7 @@ Pros:
 Cons:
 * NodeMcu boards only. As it is, it uses the uses eptool-ck's "nodemcu reset mode".
 * Windows only. It interfaces with Windows' command prompt.
+* Only a sub-set of esptool-ck's are available, and only those related to flashing NodeMcu boards. No aspects of the conversion of ELF files into BIN files is explored at the moment.
 
 You may change these issues in the code if you feel like it.
 
