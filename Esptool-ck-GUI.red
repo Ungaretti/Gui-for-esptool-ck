@@ -107,6 +107,7 @@ funcFlashEsp:
 	]
 	funcCheckMem
 	either readyFlag [
+		log: ""                                  ; to log the output of esptool.exe. For debugging.
 		command: []
 		append command "esptool.exe -vv -cd nodemcu -cb"
 		append command dropBaudRate/text
@@ -115,8 +116,10 @@ funcFlashEsp:
 		append command "-ca 0x00000 -cf"
 		append command fieldFilename/text
 		print command
-		call/shell/show form command
+		call/shell/show/output form command log
+		print log                                 ;prints the output of esptool.exe. For debugging.
 		clear command
+		clear log
 	][exit]
 ]
 
