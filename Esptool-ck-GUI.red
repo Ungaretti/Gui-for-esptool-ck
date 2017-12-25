@@ -107,6 +107,7 @@ funcFlashEsp:
 	]
 	funcCheckMem
 	either readyFlag [
+		log: ""
 		command: []
 		append command "esptool.exe -vv -cd nodemcu -cb"
 		append command dropBaudRate/text
@@ -115,8 +116,9 @@ funcFlashEsp:
 		append command "-ca 0x00000 -cf"
 		append command fieldFilename/text
 		print command
-		call/shell/show form command
+		call/shell/show/output form command log
 		clear command
+		clear log
 	][exit]
 ]
 
