@@ -40,5 +40,5 @@ I believe that it's use is pretty intuitive.
 
 I suggest you use [ESPlorer](https://esp8266.ru/esplorer) to open your device and, after reseting the board and adjusting the baud rate, you should have the lua prompt at the serial console.
 
-Note: The binary built you get from nodemcu-build.com is made for devices with memory of 512KB. This is not an issue if you use esptool.py, but esptool-ck is also a tool for converting ELF files to BIN files, and it sets the memory size during this conversion. **However, I added a tool that adjusts the BIN file to the memory size you select.**  You will get a warning and, by clicking a button, GUI-for-esptool-ck creates a new correct file named NewBinary.bin in the same folder as the original file.
+Note: The binary built you get from nodemcu-build.com is made for devices with memory of 512KB. This is not an issue if you use esptool.py, but esptool-ck is also a tool for converting ELF files to BIN files, and it sets the memory size during this conversion. **However, I added a tool that adjusts the BIN file to the memory size you select.**  You will get a warning and, by clicking a button, GUI-for-esptool-ck creates a new correct file named NewBinary.bin in the same folder as the original file. **You should move or copy this file to the main folder, the one you created above that has esptool.exe.**
 
